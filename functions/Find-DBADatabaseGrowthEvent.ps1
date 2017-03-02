@@ -26,17 +26,17 @@ Query Extracted from SQL Server Management Studio (SSMS) 2016.
 https://dbatools.io/Get-DBADatabaseGrowthEvent
 
 .EXAMPLE
-Get-DBADatabaseGrowthEvent -SqlServer localhost
+Find-DBADatabaseGrowthEvent -SqlServer localhost
 
 Returns any database AutoGrow events in the Default Trace for every database on the localhost instance.
 
 .EXAMPLE
-Get-DBADatabaseGrowthEvent -SqlServer ServerA\SQL2016, ServerA\SQL2014
+Find-DBADatabaseGrowthEvent -SqlServer ServerA\SQL2016, ServerA\SQL2014
 
 Returns any database AutoGrow events in the Default Traces for every database on ServerA\sql2016 & ServerA\SQL2014.
 
 .EXAMPLE
-Get-DbaQueryStoreConfig -SqlServer ServerA\SQL2016 | Format-Table -AutoSize -Wrap
+Find-DbaQueryStoreConfig -SqlServer ServerA\SQL2016 | Format-Table -AutoSize -Wrap
 
 RetuReturns any database AutoGrow events in the Default Trace for every database on the ServerA\SQL2016 instance in a table format.
 	
